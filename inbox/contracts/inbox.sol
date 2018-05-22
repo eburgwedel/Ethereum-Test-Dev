@@ -12,9 +12,9 @@ contract Inbox {
     function setMessage(string newMessage) public {
         message = newMessage;
     }
-    
+
     function getBadMessage() public view returns (string) {
-        message = "1"; // vialates the declaration as "view" = read only
+        // message = "1"; // vialates the declaration as "view" = read only
         return message; // output will be "1" but message does not change
     }
     
@@ -22,7 +22,7 @@ contract Inbox {
         return "this is a message";
     }
 
-   function getRealMessage() public view returns (string) {
+    function getRealMessage() public view returns (string) {
         return message; // returns the real message
     }
 }

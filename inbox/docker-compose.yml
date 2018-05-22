@@ -5,7 +5,7 @@ services:
   node-dev:
     image: custom-node-alpine
     build: .
-    container_name: node-node
+    container_name: node-dev
 
     working_dir: /home/node/app
     ports: 
